@@ -2,11 +2,20 @@
 
 This guide provides a step-by-step process to set up and deploy your Next.js WhatsApp clone project. The following script installs dependencies, sets up Firebase, and configures Prisma.
 
+## Features
+
+- **Real-time Messaging:** Developed a full-featured real-time messaging application with React, Next.js, and Node.js.
+- **Voice and Video Calls:** Integrated Zegocloud API for seamless voice and video call functionality.
+- **Secure User Authentication:** Implemented secure user login and registration.
+- **Dynamic Chat Interface:** Created a dynamic chat interface for smooth user interactions.
+- **Multimedia Messaging:** Supported real-time text and multimedia messaging.
+- **Advanced Search Capabilities:** Enabled advanced search features to find chats and messages easily.
+
 ## Setup Instructions
 
 To get started, copy and run the following script in your terminal:
 
-\```bash
+```bash
 #!/bin/bash
 
 # Set up the Client
@@ -60,14 +69,3 @@ npx prisma generate
 
 # Install Security-Related Package
 npm install helmet
-\```
-
-## Additional Information
-
-- **Client Directory:** Contains the frontend code for the Next.js application.
-- **Server Directory:** Contains the backend code, potentially using Node.js/Express.
-- **Firebase:** Utilized for hosting and deploying the project.
-- **Prisma:** ORM for database interaction.
-- **Additional Dependencies:** Include React icons, DOM handling, and security enhancements.
-
-To execute all the steps, simply copy the script above and paste it into your terminal.
