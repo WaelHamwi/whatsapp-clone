@@ -1,0 +1,58 @@
+[debug] [2024-08-10T10:27:29.709Z] ----------------------------------------------------------------------
+[debug] [2024-08-10T10:27:29.714Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\wael\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-08-10T10:27:29.715Z] CLI Version:   13.15.1
+[debug] [2024-08-10T10:27:29.715Z] Platform:      win32
+[debug] [2024-08-10T10:27:29.715Z] Node Version:  v20.12.2
+[debug] [2024-08-10T10:27:29.715Z] Time:          Sat Aug 10 2024 13:27:29 GMT+0300 (Eastern European Summer Time)
+[debug] [2024-08-10T10:27:29.715Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-10T10:27:29.729Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-10T10:27:29.730Z] > authorizing via signed-in user (waellhamwii@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\wael\Desktop\Whatsapp\client
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-08-10T10:28:15.069Z] > refreshing access token with scopes: []
+[debug] [2024-08-10T10:28:15.071Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-08-10T10:28:15.071Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-08-10T10:28:16.333Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-08-10T10:28:16.333Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-08-10T10:28:16.349Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-08-10T10:28:17.307Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-08-10T10:28:17.307Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project whatsapp-7fa33 (WhatsApp) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-08-10T10:28:34.752Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/whatsapp-7fa33/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-08-10T10:28:34.752Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/whatsapp-7fa33/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/whatsapp-7fa33
+[debug] [2024-08-10T10:28:36.719Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/whatsapp-7fa33/services/firebasedatabase.googleapis.com 200
+[debug] [2024-08-10T10:28:36.719Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/whatsapp-7fa33/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2024-08-10T10:28:36.722Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/whatsapp-7fa33/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2024-08-10T10:28:36.722Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/whatsapp-7fa33/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/whatsapp-7fa33
+[debug] [2024-08-10T10:28:37.876Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/whatsapp-7fa33/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2024-08-10T10:28:37.876Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/whatsapp-7fa33/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2024-08-10T10:28:47.887Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/whatsapp-7fa33/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-08-10T10:28:47.888Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/whatsapp-7fa33/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/whatsapp-7fa33
+[debug] [2024-08-10T10:28:50.612Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/whatsapp-7fa33/services/firebasedatabase.googleapis.com 200
+[debug] [2024-08-10T10:28:50.613Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/whatsapp-7fa33/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-08-10T10:28:50.626Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/whatsapp-7fa33 [none]
+[debug] [2024-08-10T10:28:51.543Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/whatsapp-7fa33 200
+[debug] [2024-08-10T10:28:51.544Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/whatsapp-7fa33 {"projectId":"whatsapp-7fa33","projectNumber":"681726736571","displayName":"WhatsApp","name":"projects/whatsapp-7fa33","resources":{"hostingSite":"whatsapp-7fa33"},"state":"ACTIVE","etag":"1_bd543cd2-2cbe-404f-bbbb-4d24a4cb65d1"}
