@@ -6,7 +6,7 @@ This guide provides a step-by-step process to set up and deploy your Next.js Wha
 
 To get started, copy and run the following script in your terminal:
 
-\```bash
+```bash
 #!/bin/bash
 
 # Set up the Client
@@ -60,14 +60,3 @@ npx prisma generate
 
 # Install Security-Related Package
 npm install helmet
-\```
-
-## Additional Information
-
-- **Client Directory:** Contains the frontend code for the Next.js application.
-- **Server Directory:** Contains the backend code, potentially using Node.js/Express.
-- **Firebase:** Utilized for hosting and deploying the project.
-- **Prisma:** ORM for database interaction.
-- **Additional Dependencies:** Include React icons, DOM handling, and security enhancements.
-
-To execute all the steps, simply copy the script above and paste it into your terminal.
