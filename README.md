@@ -1,60 +1,73 @@
 # Next.js WhatsApp Clone Starter
 
-This repository provides a step-by-step setup for a Next.js WhatsApp clone project. Below is a single bash script that you can copy and execute to install dependencies, set up Firebase, and configure Prisma.
+This guide provides a step-by-step process to set up and deploy your Next.js WhatsApp clone project. The following script installs dependencies, sets up Firebase, and configures Prisma.
 
 ## Setup Instructions
 
-To get started, copy the following script into your terminal:
+To get started, copy and run the following script in your terminal:
 
-```bash
-# 1. Set up the Client
+\```bash
+#!/bin/bash
+
+# Set up the Client
 cd client && npm install
 
-# 2. Set up the Server
+# Set up the Server
 cd ../server && npm install
 
-# 3. Install Firebase CLI globally and Firebase in the project
+# Install Firebase CLI globally and Firebase in the project
 npm install -g firebase-tools
 npm install firebase
 
-# 4. Firebase Login and Initialization
+# Firebase Login and Initialization
 firebase login
 firebase init
 
-# 5. Deploy Firebase
+# Deploy Firebase
 firebase deploy
 
-# 6. Initialize Firebase Hosting in the Client Directory and Deploy
+# Initialize Firebase Hosting in the Client Directory and Deploy
 cd ../client
 firebase init hosting
 firebase deploy --only hosting
 
-# 7. Install Prisma Dependencies
+# Install Prisma Dependencies
 npm install --save-dev prisma
 npm install prisma@5.18.0
 npm install @prisma/client@5.18.0
 
-# 8. Prisma Setup
+# Prisma Setup
 npx prisma generate
 npx prisma db push
 npx prisma studio
 npx prisma init
 
-# 9. Start the Server
+# Start the Server
 cd ../server
 npm start
 
-# 10. Install Additional Dependencies
+# Install Additional Dependencies
 npm install react-icons
 npm install react-dom
 npm audit fix --force
 npm install cors
 npm cache clean --force
 
-# 11. Run Prisma Commands After Each Database Push
+# Run Prisma Commands After Each Database Push
 npx prisma db push
 npx prisma studio
 npx prisma generate
 
-# 12. Install Security-Related Package
+# Install Security-Related Package
 npm install helmet
+\```
+
+## Additional Information
+
+- **Client Directory:** Contains the frontend code for the Next.js application.
+- **Server Directory:** Contains the backend code, potentially using Node.js/Express.
+- **Firebase:** Utilized for hosting and deploying the project.
+- **Prisma:** ORM for database interaction.
+- **Additional Dependencies:** Include React icons, DOM handling, and security enhancements.
+
+To execute all the steps, simply copy the script above and paste it into your terminal.
