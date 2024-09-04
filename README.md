@@ -1,49 +1,77 @@
-# Set up the client
-cd client && npm install
+#!/bin/bash
 
-# Set up the server
-cd ../server && npm install
+# Set up the Client
+echo "Setting up the Client..."
+cd client
+npm install
+echo "Client setup completed."
+
+# Set up the Server
+echo "Setting up the Server..."
+cd ../server
+npm install
+echo "Server setup completed."
 
 # Install Firebase CLI globally and Firebase in the project
+echo "Installing Firebase CLI and Firebase..."
 npm install -g firebase-tools
 npm install firebase
+echo "Firebase installation completed."
 
-# Log in to Firebase, initialize, and deploy
+# Firebase Login, Initialization, and Deployment
+echo "Logging in to Firebase..."
 firebase login
+echo "Initializing Firebase..."
 firebase init
+echo "Deploying Firebase..."
 firebase deploy
 
-# Initialize Firebase Hosting in the client directory and deploy only hosting
+# Initialize Firebase Hosting in the Client Directory and Deploy
+echo "Initializing Firebase Hosting in the Client directory..."
 cd ../client
 firebase init hosting
+echo "Deploying Firebase Hosting..."
 firebase deploy --only hosting
 
-# Install Prisma dependencies
+# Install Prisma Dependencies
+echo "Installing Prisma dependencies..."
 npm install --save-dev prisma
 npm install prisma@5.18.0
 npm install @prisma/client@5.18.0
 
-# Generate Prisma client and push to database
+# Prisma Setup
+echo "Setting up Prisma..."
 npx prisma generate
 npx prisma db push
 npx prisma studio
 npx prisma init
+echo "Prisma setup completed."
 
-# Start the server with environment configuration
+# Start the Server
+echo "Starting the Server..."
 cd ../server
 npm start
+echo "Server started."
 
-# Install additional dependencies
+# Install Additional Dependencies
+echo "Installing additional dependencies..."
 npm install react-icons
 npm install react-dom
 npm audit fix --force
 npm install cors
 npm cache clean --force
+echo "Additional dependencies installed."
 
-# Run Prisma commands after each database push
+# Run Prisma Commands After Each Database Push
+echo "Running Prisma commands..."
 npx prisma db push
 npx prisma studio
 npx prisma generate
+echo "Prisma commands executed."
 
-# Install security-related package
+# Install Security-Related Package
+echo "Installing Helmet for security..."
 npm install helmet
+echo "Helmet installed."
+
+echo "Setup complete!"
